@@ -8,5 +8,10 @@
 
 import Foundation
 
-executeDemoUsage()
-executeSort()
+//executeDemoUsage()
+//executeSort()
+//testEnumDefine()
+testProtocol()
+println(0xC.3p0)
+var a:String!="a"
+println(a)
