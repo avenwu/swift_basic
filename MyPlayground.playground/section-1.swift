@@ -66,7 +66,12 @@ println("Outside money = \(myStruct.money)")
 
 class MyClass {
     var money = 100 as Int
-    
+    init() {
+        
+    }
+    init(money : Int) {
+        self.money = money
+    }
     func addMonet(count : Int){
         money += count;
     }
@@ -79,4 +84,68 @@ var myClass = MyClass()
 changeMoney(myClass, addMore: 10)
 
 myClass.money
+
+//操作符重载
+postfix func ++ (inout myClass : MyClass) -> MyClass {
+    var newClass = MyClass(money : myClass.money)
+    myClass.money++
+    return newClass
+}
+
+prefix func ++ (inout myClass : MyClass) -> MyClass {
+    myClass.money++
+    var newClass = MyClass(money : myClass.money)
+    return newClass
+}
+
+let newClass = myClass++
+myClass
+let newClass2 = ++myClass
+
+var a = 3
+a++
+++a
+func + (left : MyClass, right : MyClass) -> MyClass {
+    var newClass = MyClass(money : left.money + right.money)
+    return newClass
+}
+newClass+newClass2
+
+//switch示例
+enum Direction: String {
+    case EAST = "东"
+    case SOUTH = "南"
+    case WEST = "西"
+    case NORTH = "北"
+}
+
+struct Path {
+    var direction : Direction
+    var miles : Int
+}
+
+let path1 = Path(direction: .EAST, miles: 100)
+let path2 = Path(direction: Direction.WEST, miles: 200)
+
+
+func printPath(path : Path) {
+    switch path.direction {
+    case Direction.EAST:
+        println("向东\(path.miles)")
+    case .WEST where path.miles > 150:
+        println("向西超出150范围")
+    case .WEST:
+        println("向西\(path.miles)")
+    default:
+        println("方向：\(path.direction), 距离：\(path.miles)")
+    }
+}
+
+printPath(path1)
+printPath(path2)
+printPath(Path(direction: .WEST, miles: 90))
+
+
+
+
 
