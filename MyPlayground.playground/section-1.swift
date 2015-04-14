@@ -33,9 +33,9 @@ default:
     print("rectangle but not square")
 }
 let s = "A"
-countElements(s)
+count(s)
 let chinese = "好a"
-countElements(chinese)
+count(chinese)
 var null:String?
 str.capitalizedString
 str.uppercaseString
@@ -145,7 +145,63 @@ printPath(path1)
 printPath(path2)
 printPath(Path(direction: .WEST, miles: 90))
 
+let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
+let blurView = UIVisualEffectView(effect: blurEffect)
+blurView.frame.size = CGSize(width: 30, height: 30)
 
+//方法定义
+//1.
+func hello(n : String) -> String {
+    return "Hello \(n)"
+}
 
+hello("Frank")
+//2.扩展方法名name
+func hello2(name n:String) -> String {
+    return "Hello \(n)"
+}
+hello2(name:"Frank")
+
+//3.形参和扩展方法名一样，name
+func hello3(#name:String) -> String {
+    return "Hello \(name)"
+}
+hello3(name: "Franck")
+
+//4.为形参设置默认值
+func hello4(name: String = "Franck") -> String {
+    return "Hello \(name)"
+}
+hello4()
+
+//5.声明变量形参
+func hello5(var name: String = "Frank") -> String {
+    return "Hello \(name)"
+}
+hello5()
+
+//6.方法参数
+func sayHello(name:String) ->String {
+    return "Hello \(name)"
+}
+func hello6(name:String, f:(String)->String) -> String {
+    return f(name)
+}
+hello6("Frank", sayHello)
+
+//7.闭包
+hello6("Frank", {(name:String)->String in
+    return "Hello \(name)"
+    })
+
+//8.闭包简写，省略参数方法的参数类型
+hello6("Frank", {name in
+    return "Hello \(name)"
+})
+
+//9.闭包简写,省略参数方法的声明
+hello6("Frank", {
+    return "Hello \($0)"
+})
 
 

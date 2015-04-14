@@ -10,6 +10,7 @@
 		3425DD8B19FD1608005C32CA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425DD8A19FD1608005C32CA /* main.swift */; };
 		3425DD9219FD2196005C32CA /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425DD9119FD2196005C32CA /* InsertionSort.swift */; };
 		3425DD9419FD2736005C32CA /* SwiftBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425DD9319FD2736005C32CA /* SwiftBasic.swift */; };
+		3437F1791ADD71F800FD62C2 /* FunctionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3437F1781ADD71F800FD62C2 /* FunctionDemo.swift */; };
 		3482603E1A4A9AB7006796D5 /* EnumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3482603D1A4A9AB7006796D5 /* EnumTest.swift */; };
 		348260401A4A9EDF006796D5 /* ProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3482603F1A4A9EDF006796D5 /* ProtocolTest.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		3425DD8A19FD1608005C32CA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3425DD9119FD2196005C32CA /* InsertionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
 		3425DD9319FD2736005C32CA /* SwiftBasic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftBasic.swift; sourceTree = "<group>"; };
+		3437F1781ADD71F800FD62C2 /* FunctionDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionDemo.swift; sourceTree = "<group>"; };
 		3482603D1A4A9AB7006796D5 /* EnumTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumTest.swift; sourceTree = "<group>"; };
 		3482603F1A4A9EDF006796D5 /* ProtocolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 				3425DD9319FD2736005C32CA /* SwiftBasic.swift */,
 				3482603D1A4A9AB7006796D5 /* EnumTest.swift */,
 				3482603F1A4A9EDF006796D5 /* ProtocolTest.swift */,
+				3437F1781ADD71F800FD62C2 /* FunctionDemo.swift */,
 			);
 			path = IntroductionToAlgrithms;
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3437F1791ADD71F800FD62C2 /* FunctionDemo.swift in Sources */,
 				3425DD9419FD2736005C32CA /* SwiftBasic.swift in Sources */,
 				348260401A4A9EDF006796D5 /* ProtocolTest.swift in Sources */,
 				3425DD8B19FD1608005C32CA /* main.swift in Sources */,
